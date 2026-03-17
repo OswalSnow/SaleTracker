@@ -12,7 +12,10 @@ class OfertaController extends Controller
      */
     public function index()
     {
-        //
+        return view('oferta.index')
+        ->with([
+            'ofertas' => Oferta::all()
+        ]);
     }
 
     /**
