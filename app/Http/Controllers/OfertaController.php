@@ -55,7 +55,10 @@ class OfertaController extends Controller
      */
     public function show(Oferta $oferta)
     {
-        //
+        return view('oferta.show')
+            ->with([
+                'oferta' => $oferta
+            ]);
     }
 
     /**
