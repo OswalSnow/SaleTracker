@@ -23,7 +23,7 @@ class OfertaController extends Controller
      */
     public function create()
     {
-        //
+        return view('oferta.create');
     }
 
     /**
