@@ -16,7 +16,7 @@
             @foreach ($ofertas as $oferta)
                 <li>
                     <a href="{{ route('ofertas.show', $oferta) }}">{{$oferta->titulo}}</a>
-                    -{{$oferta->tienda}}{{$oferta->vigencia}}
+                    - {{$oferta->tienda}} {{$oferta->vigencia}}
                 </li>
             @endforeach
         </ul>
