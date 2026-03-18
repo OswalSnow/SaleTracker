@@ -40,5 +40,10 @@
     </table>
 
     <br><a href="{{ route('ofertas.edit', $oferta)}}">Editar esta oferta</a>
+    <br><br><form action="{{ route('ofertas.destroy', $oferta) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit">Eliminar</button>
+        </form>
 </body>
 </html>

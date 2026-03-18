@@ -100,6 +100,7 @@ class OfertaController extends Controller
      */
     public function destroy(Oferta $oferta)
     {
-        //
+        $oferta->delete();
+        return redirect()->route('ofertas.index');
     }
 }
