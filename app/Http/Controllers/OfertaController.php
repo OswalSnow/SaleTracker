@@ -66,7 +66,10 @@ class OfertaController extends Controller
      */
     public function edit(Oferta $oferta)
     {
-        //
+        return view('oferta.edit')
+            ->with([
+                'oferta' => $oferta
+            ]);
     }
 
     /**

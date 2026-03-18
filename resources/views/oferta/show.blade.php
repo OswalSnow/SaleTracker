@@ -38,5 +38,7 @@
             <td style="padding: 8px; border: 1px solid black;"> ${{ $oferta->precio_original - $oferta->precio_descuento}} </td>
         </tr>
     </table>
+
+    <br><a href="{{ route('ofertas.edit', $oferta)}}">Editar esta oferta</a>
 </body>
 </html>
